@@ -14,3 +14,5 @@ Route::get('/dashboard', [SnippetController::class, 'index'])->name('dashboard')
 
 Route::get('/dashboard', function(){
 })->name('dashboard');
+
+
