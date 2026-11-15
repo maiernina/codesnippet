@@ -25,9 +25,9 @@
 
             <button
                 type="submit"
-                class="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 rounded-lg transition"
+                style="background-color:#ec4899;color:white;padding:12px 20px;border-radius:10px;width:100%;border:none;font-weight:bold;cursor:pointer;"
             >
-                💖 Token erstellen
+                Token erstellen
             </button>
         </form>
 
