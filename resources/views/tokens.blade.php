@@ -4,6 +4,7 @@
 
     <div class="max-w-md mx-auto bg-pink-100 rounded-xl shadow-lg p-8">
 
+
         <h1 class="text-3xl font-bold text-center text-pink-600 mb-6">
             Token erstellen
         </h1>
@@ -22,6 +23,17 @@
                 class="w-full border-2 border-pink-300 rounded-lg p-3 mb-4 focus:outline-none focus:border-pink-500"
                 required
             >
+
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" name="abilities[]" value="codesnippets:list"
+                @checked(is_array(old('abilities')) && in_array('codesnippets:list', old('abilities')))/>
+                <span class="text-sm text-slate-700">{{__('Create codesnippets')}}</span>
+            </label>
+            <label class="flex items-center space-x-3">
+                <input type="checkbox" name="abilities[]" value="codesnippets:create"
+                    @checked(is_array(old('abilities')) && in_array('codesnippets:create', old('abilities')))/>/>
+                <span class="text-sm text-slate-700">{{__('Create codesnippets')}}</span>
+            </label>
 
             <button
                 type="submit"

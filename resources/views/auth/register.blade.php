@@ -3,7 +3,7 @@
 @section('content')
     <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
 
-        <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">
+        <h2 class="text-3xl font-bold text-center text-pink-600 mb-6">
             Registrieren
         </h2>
 
@@ -69,7 +69,7 @@
 
         <p class="text-center mt-4">
             Bereits registriert?
-            <a href="{{ route('login') }}" class="text-blue-600 font-semibold hover:underline">
+            <a href="{{ route('login') }}" class="text-pink-600 font-semibold hover:underline">
                 Zum Login
             </a>
         </p>

@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
+    <div class="w-full max-w-md bg-pink-50 rounded-xl shadow-lg p-8 border border-pink-200">
 
-        <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">
+
+    <h2 class="text-3xl font-bold text-center text-pink-600 mb-6">
             Login
         </h2>
 
@@ -18,7 +19,7 @@
                 <input
                     type="email"
                     name="email"
-                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full border border-pink-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
                     required
                 >
             </div>
@@ -31,7 +32,7 @@
                 <input
                     type="password"
                     name="password"
-                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    class="w-full border border-pink-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
                     required
                 >
             </div>
@@ -43,7 +44,7 @@
 
         <p class="text-center mt-4">
             Noch kein Konto?
-            <a href="{{ route('register') }}" class="text-blue-600 font-semibold hover:underline">
+            <a href="{{ route('register') }}" class="text-pink-600 font-semibold hover:underline">
                 Registrieren
             </a>
         </p>

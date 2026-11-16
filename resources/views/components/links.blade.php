@@ -1,8 +1,15 @@
-<div>
-    <!-- Breathing in, I calm body and mind. Breathing out, I smile. - Thich Nhat Hanh -->
-</div>
-<a {{ $attributes }} style="color: blue;">
+<a
+    {{ $attributes }}
+    style="
+        background:#c8a2c8;
+        color:white;
+        padding:10px 15px;
+        border-radius:10px;
+        text-decoration:none;
+        font-weight:bold;
+        margin-right:10px;
+        display:inline-block;
+    "
+>
     {{ $slot }}
 </a>
-
-

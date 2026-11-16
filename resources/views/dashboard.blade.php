@@ -4,20 +4,26 @@
 @section('content')
     <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
 
-        <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">
-            Login
+        <h2 class="text-3xl font-bold text-center text-pink-600 mb-6">
+            CodeSnippets
         </h2>
 
-        <p class="mb-6 text sm text-shadow-violet-500">
-            CodeSnippets
-        </p>
 
-        <div class="space-x-3">
-        @foreach($snippets as $snippet)
-            <div class="m-3">
-            {{ $snippet->title }}
-            </div>
-        @endforeach
+
+        <div class="space-y-3">
+
+            @foreach($snippets as $snippet)
+
+                <div class="bg-pink-100 border-2 border-pink-300 rounded-xl p-4 shadow-sm">
+
+            <span class="font-semibold text-pink-700">
+                {{ $snippet->title }}
+            </span>
+
+                </div>
+
+            @endforeach
+
         </div>
 
     </div>
