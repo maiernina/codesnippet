@@ -12,4 +12,9 @@ class SnippetController extends Controller
         $snippets = snippet::all();
         return view('dashboard', ['snippets' => $snippets]);
     }
+    public function show($id)
+    {
+        $snippet = snippet::findOrFail($id);
+        return view('snippetdetail', ['snippet' => $snippet]);
+    }
 }

@@ -16,9 +16,12 @@
 
                 <div class="bg-pink-100 border-2 border-pink-300 rounded-xl p-4 shadow-sm">
 
-            <span class="font-semibold text-pink-700">
-                {{ $snippet->title }}
-            </span>
+                    <a
+                        href="{{ route('snippet.show', $snippet->id) }}"
+                        class="font-semibold text-pink-700 block"
+                    >
+                        {{ $snippet->title }}
+                    </a>
 
                 </div>
 

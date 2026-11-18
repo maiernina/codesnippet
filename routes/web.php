@@ -13,8 +13,10 @@ Route::get('/home', function () {
 
 Route::get('/dashboard', [SnippetController::class, 'index'])->name('dashboard');
 
-Route::get('/tokens', [TokenController::class, 'index'])
-    ->name('tokens');
+Route::get('/tokens', [TokenController::class, 'index'])->middleware(['auth:sanctum'])
+    ->name('tokens.index');
 
-Route::post('/tokens', [TokenController::class, 'store'])
+Route::post('/tokens', [TokenController::class, 'store'])->middleware(['auth:sanctum'])
     ->name('tokens.store');
+
+Route::get('/snippte/{id}', [SnippetController::class, 'show'])->name('snippet.show');

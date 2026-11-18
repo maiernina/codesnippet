@@ -11,12 +11,36 @@
 
 <nav style="background-color:#b57edc;" class="shadow-md">
     @auth
-        <form action="{{ route('logout') }}" method="POST">
-            @csrf
-            <button type="submit">
-                Logout
-            </button>
-        </form>
+        <div class="flex gap-4 px-4 py-2">
+
+            <a href="{{ route('dashboard') }}" style="
+            background:#c8a2c8;
+            color:white;
+            padding:10px 16px;
+            border-radius:10px;
+            text-decoration:none;
+            font-weight:bold;">
+                Dashboard
+            </a>
+
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button
+                    type="submit"
+                    style="
+                background:#ec4899;
+                color:white;
+                padding:10px 16px;
+                border-radius:10px;
+                border:none;
+                font-weight:bold;
+                cursor:pointer;"
+                >
+                    Logout
+                </button>
+            </form>
+
+        </div>
     @endauth
 
         @guest

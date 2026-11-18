@@ -27,11 +27,11 @@
             <label class="flex items-center space-x-3">
                 <input type="checkbox" name="abilities[]" value="codesnippets:list"
                 @checked(is_array(old('abilities')) && in_array('codesnippets:list', old('abilities')))/>
-                <span class="text-sm text-slate-700">{{__('Create codesnippets')}}</span>
+                <span class="text-sm text-slate-700">{{__('List codesnippets')}}</span>
             </label>
             <label class="flex items-center space-x-3">
                 <input type="checkbox" name="abilities[]" value="codesnippets:create"
-                    @checked(is_array(old('abilities')) && in_array('codesnippets:create', old('abilities')))/>/>
+                    @checked(is_array(old('abilities')) && in_array('codesnippets:create', old('abilities')))/>
                 <span class="text-sm text-slate-700">{{__('Create codesnippets')}}</span>
             </label>
 
