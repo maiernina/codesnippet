@@ -16,3 +16,5 @@ Route::get('/codesnippets', [RestsnippetController::class, 'index'])
 
 Route::post('/codesnippets', [RestsnippetController::class, 'store'])
     ->middleware(['auth:sanctum', 'abilities:codesnippets:create']);
+
+Route::get('random',[RestsnippetController::class, 'random'])->middleware('auth:sanctum','abilities:codesnippets:list');

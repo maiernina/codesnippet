@@ -19,4 +19,4 @@ Route::get('/tokens', [TokenController::class, 'index'])->middleware(['auth:sanc
 Route::post('/tokens', [TokenController::class, 'store'])->middleware(['auth:sanctum'])
     ->name('tokens.store');
 
-Route::get('/snippte/{id}', [SnippetController::class, 'show'])->name('snippet.show');
+Route::get('/snippet/{id}', [SnippetController::class, 'show'])->middleware(['auth:sanctum'])->name('snippet.show');

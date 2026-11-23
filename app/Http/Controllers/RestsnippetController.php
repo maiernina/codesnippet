@@ -25,4 +25,15 @@ class RestsnippetController extends Controller
         return['success' => true, 'codesnippet'=>$codesnippet];
     }
 
+    public function random()
+    {
+        $snippetcollection = snippet::all();
+        $snippet =$snippetcollection->random();
+
+        return [
+            'success' => true,
+            'snippet' => $snippet
+        ];
+
+    }
 }
